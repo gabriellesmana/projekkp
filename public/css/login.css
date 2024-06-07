@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.8)), 
+    url(../img/IMG_4706.JPG);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+
+
+#login {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input {
+    width: calc(100%);
+    padding: 5px;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    transition: border-color 0.3s;
+}
+
+.input-box img {
+    width: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.input-box:hover {
+    border: 1px solid  #3498db;
+}
+
+#login h1 {
+    font-size: 35px; /* Sesuaikan dengan nilai yang diinginkan dalam pixel */
+    font-family: 'Overpass', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px; /* Sesuaikan dengan nilai yang diinginkan dalam pixel */
+}
+
+.btn-primary {
+    width: 100%;
+    font-size: 18px; /* Sesuaikan dengan nilai yang diinginkan dalam pixel */
+    background-color: #297fb8;
+    border-color: #297fb8;
+}
+
+.btn-primary:hover {
+    background-color: #297fb8;
+    border-color: #297fb8;
+}

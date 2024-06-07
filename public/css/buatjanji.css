@@ -1,0 +1,135 @@
+body {
+  background-color: #2c3e50;
+  font-family: "Reddit Sans", sans-serif;
+  color: #ecf0f1;
+  padding: 20px;
+}
+
+#Formulir {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 40px auto;
+  color: #2c3e50;
+}
+
+#Formulir h1 {
+  text-align: center;
+  font-family: "Reddit Sans", sans-serif;
+  font-size: 35px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.ticket {
+  border: 3px solid #3498db;
+  padding: 20px;
+  text-align: center;
+  font-family: "Reddit Sans", sans-serif;
+  font-size: 1em;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border-radius: 10px;
+}
+
+.ticket-header {
+  margin-bottom: 20px;
+}
+
+.hospital-logo {
+  max-width: 60px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.hospital-name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.hospital-address,
+.hospital-phone {
+  margin: 0;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.nomor-antrian {
+  font-size: 20px;
+  color: #e74c3c;
+}
+
+.antrian-box {
+  border: 3px solid #3498db;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.antrian-number {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.note {
+  font-size: 12px;
+  margin: 10px 0;
+  color: #7f8c8d;
+}
+
+.terimakasih {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.modal-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.modal-body {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  color: #2c3e50;
+}
+
+.modal-footer {
+  justify-content: space-between;
+}
+
+.btn-keluar {
+  background-color: #e74c3c;
+  color: white;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+.btn-print {
+  background-color: #3498db;
+  color: white;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+/* Menambahkan hover efek untuk tombol */
+.btn-keluar:hover, .btn-print:hover {
+  opacity: 0.8;
+}
+
+/* Menambahkan efek shadow ke tombol */
+.btn-keluar, .btn-print {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menambahkan animasi sederhana pada tombol */
+.btn-keluar, .btn-print {
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}

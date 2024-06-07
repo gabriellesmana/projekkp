@@ -1,0 +1,244 @@
+body {
+    overflow: hidden;
+    overflow-x: hidden;
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding-top: 56px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-left: 250px; /* Lebar navbar samping */
+    }
+}
+
+.navbar {
+  background-color: #343a40; /* Adjust background color */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Even stronger shadow */
+  display: flex; /* Mengubah tata letak navbar menjadi flexbox */
+  justify-content: space-between; /* Membuat ruang di antara elemen-elemen navbar */
+  align-items: center; /* Menengahkan vertikal elemen-elemen navbar */
+}
+.search-box {
+  display: flex; /* Mengubah tata letak search-box menjadi flexbox */
+  margin-left: 950px;
+}
+
+.form-control {
+    border-radius: 7px;
+    border: none;
+}
+
+.btn i {
+    color: white;
+}
+
+.navbar a {
+    font-size: large;
+    font-weight: bold;
+    color: white !important;
+}
+
+/* Sidebar */
+.side-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 242px;
+    background-color: #343a40; /* Adjust color as needed */
+    padding-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between to push items to top and bottom */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Even stronger shadow */
+}
+
+.side-navbar .navbar-brand {
+    color: #fff;
+}
+
+.side-navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-navbar ul li {
+    padding: 0.5rem;
+}
+
+.side-navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-navbar ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: large;
+    font-weight: bold;
+}
+
+.side-navbar li {
+    margin-left: 10px;
+}
+
+/* Ensure the logout button is at the bottom */
+.logout-container {
+    margin-top: auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding-bottom: 20px; /* Add some padding at the bottom */
+}
+
+/* Styling for the logout button */
+.btn-logout {
+    width: 80%; /* Slightly reduced width for better centering */
+    padding: 10px;
+    color: white;
+    background-color: #dc3545; /* Bootstrap danger color */
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 0; /* Ensure margin-left is 0 */
+}
+
+.btn-logout:hover {
+    background-color: #c82333; /* Darker shade for hover */
+}
+
+/* Styles for the rest of the page */
+#dash h1 {
+    margin-left: 100px;
+    font-size: 35px;
+}
+
+#dash span {
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/* Card Section */
+#card1, #card2, #card3, #card4 {
+    width: 525px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Adding initial opacity and transform for entrance animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardEntrance 0.6s ease forwards;
+}
+
+#card1 {
+    margin-left: 100px;
+    margin-top: 30px;
+    background-color: rgb(0, 89, 253);
+}
+
+#card2 {
+    margin-top: 30px;
+    background-color: coral;
+}
+
+#card3 {
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: limegreen;
+}
+
+#card4 {
+    margin-top: 20px;
+    background-color: orange;
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#card1 h5, #card2 h5, #card3 h5, #card4 h5 {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+/* Table Section */
+#tabel {
+    margin-top: 20px;
+    width: 1060px;
+    margin-left: 100px;
+    margin-bottom: 50px; /* Menambahkan jarak di bawah tabel */
+}
+
+.table {
+    margin-top: 10px;
+    padding-left: 8px; /* Sesuaikan dengan kebutuhan */
+    padding-right: 8px; /* Sesuaikan dengan kebutuhan */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah tabel */
+}
+
+
+
+#box h1 {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Dark mode */
+[data-theme="dark"] .navbar,
+[data-theme="dark"] .side-navbar {
+    background-color: #34495e; /* Ubah sesuai kebutuhan */
+}
+
+[data-theme="dark"] .navbar a,
+[data-theme="dark"] .side-navbar ul li a {
+    color: #ffffff; /* Ubah sesuai kebutuhan */
+}
+
+
+
+[data-theme="dark"] .btn-logout {
+    background-color: #dc3545; /* Ubah sesuai kebutuhan */
+    color: #ffffff; /* Ubah sesuai kebutuhan */
+}
+
+[data-theme="dark"] .card-text {
+    color: #ffffff; /* Ubah sesuai kebutuhan */
+}
+
+[data-theme="dark"] body {
+  background-color: #34495e; /* Ubah sesuai kebutuhan */
+}
+
+[data-theme="dark"] #dash h1,
+[data-theme="dark"] #dash span {
+    color: white !important; /* Ubah sesuai kebutuhan */
+}
+/* Dark mode */

@@ -1,0 +1,79 @@
+
+@media print {
+    @page {
+        size: 12cm 16cm;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .modal-content {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    .modal-header, .modal-footer {
+        display: none !important;
+    }
+
+    .modal-body {
+        font-size: 10px;
+        overflow: hidden;
+    }
+
+    h2, h3 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .display-1 {
+        font-size: 24px;
+    }
+}
+
+body {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.btn {
+    color: #fff;
+}
+
+#ticketModal .modal-content {
+    background-color: #34495e;
+}
+
+#ticketModal .modal-title {
+    color: #fff;
+}
+
+#ticketModal .modal-body {
+    color: #fff;
+}
+
+#ticketModal .btn-primary {
+    background-color: #3498db;
+}
+
+#ticketModal .btn-primary:hover {
+    background-color: #2980b9;
+}
+
+a {
+    color: #fff;
+}

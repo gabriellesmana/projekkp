@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #343a40 !important;
+    color: #ffffff;
+    padding: 20px;
+}
+
+h2, h1 {
+    margin-top: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    text-align: left;
+    background-color: #2c3e50; /* Background for table */
+    color: #ffffff; /* Text color for table */
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495e; /* Darker background for headers */
+    color: #ffffff;
+}
+
+tr:nth-of-type(even) {
+    background-color: #3c5068; /* Slightly lighter background for even rows */
+}
+
+tr:nth-of-type(odd) {
+    background-color: #2c3e50; /* Background for odd rows */
+}
+
+.print-btn {
+    border-radius: 7px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    color: white;
+    background-color: #4CAF50;
+    transition: background-color 0.3s ease;
+}
+
+.print-btn:hover {
+    background-color: #45a049;
+}
+
+#Formulir {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 40px auto;
+    color: #2c3e50;
+}
+
+.ticket {
+    border: 3px solid #3498db;
+    padding: 20px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 1em;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 10px;
+}
+
+.ticket-header {
+    margin-bottom: 20px;
+}
+
+.hospital-logo {
+    max-width: 60px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.hospital-name {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.hospital-address,
+.hospital-phone {
+    margin: 0;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.nomor-antrian {
+    font-size: 20px;
+    color: #e74c3c;
+}
+
+.antrian-box {
+    border: 3px solid #3498db;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #2c3e50;
+}
+
+.antrian-number {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.note {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #7f8c8d;
+}
+
+.terimakasih {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.modal-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.modal-body {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    color: #2c3e50;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+.btn-keluar {
+    background-color: #e74c3c;
+    color: white;
+    font-family: "Arial", sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-print {
+    background-color: #3498db;
+    color: white;
+    font-family: "Arial", sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-keluar:hover, .btn-print:hover {
+    background-color: #2980b9;
+    opacity: 0.9;
+}
+
+@media print {
+    header, footer, .btn-print, .btn-keluar {
+        display: none !important;
+    }
+}
+    
+
+/* General Styles for the Form */
+#todo-form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    max-width: 300px;
+    
+}
+
+/* Styles for the Input */
+#todo-form input[type="date"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#todo-form input[type="date"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Styles for the Button */
+#todo-form button {
+    padding: 5px 10px;
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#todo-form button:hover {
+    background-color: #138496;
+    transform: translateY(-2px);
+}
+
+#todo-form button:active {
+    background-color: #117a8b;
+    transform: translateY(0);
+}
